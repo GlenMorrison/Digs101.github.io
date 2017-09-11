@@ -1,3 +1,7 @@
+/*
+    http://htmlpreview.github.io/?https://github.com/GlenMorrison/Digs101.github.io/blob/master/index.html
+*/
+
 /* reset all button styles, so buttons uniform in all browsers*/
 button {
     background: none;
@@ -55,6 +59,7 @@ button {
     margin-top: 120px;
     height: auto;
     width: 90%;
+    /*background: rgba(54, 25, 25, .05);*/
 }
 
 .module_button{
@@ -93,17 +98,39 @@ button {
     cursor: pointer;
 
     min-width: 550px;
-    max-width: 550px;
-    margin-left: 44px;
+    max-width: 100%;
+    margin-left: 35px;
     transition: all 0.1s
 }
 
 .module_image{
     width: 20%;
-    height:20%;
+    height: auto;
+    max-height: 102px;
+    max-width: 102px;
     margin-top: 5px;
 }
 
-.module_text{
 
+@media only screen and (max-width: 1350px) {
+    .module_button {
+        position: relative;
+        margin: 0 auto;
+
+        min-width: 0%;
+        min-height: 300px;
+    
+        max-width: 100%;
+        max-height: 200px;
+
+        width: 100%;
+        height: 500px;
+    }
+    .module_button:hover {
+        margin-left: 0px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        transition: all 0.1s
+    }
 }
+
