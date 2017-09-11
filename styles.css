@@ -123,6 +123,40 @@ button {
         max-width: 100%;
         max-height: 200px;
 
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        width: 40%;
+        margin: 4%;
+        min-width: 40%;
+        max-width: 40%;
+        height: 500px;
+    }
+    .module_button:hover {
+        margin-left: 0px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        min-width: 40%;
+        max-width: 40%;
+        transition: all 0.1s
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .module_button {
+        position: relative;
+        margin: 0 auto;
+
+        min-width: 0%;
+        min-height: 300px;
+    
+        max-width: 100%;
+        max-height: 200px;
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+
         width: 100%;
         height: 500px;
     }
@@ -130,6 +164,8 @@ button {
         margin-left: 0px;
         margin-top: 40px;
         margin-bottom: 40px;
+        min-width: 100%;
+        max-width: 100%;
         transition: all 0.1s
     }
 }
